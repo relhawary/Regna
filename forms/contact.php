@@ -44,6 +44,6 @@ if (mail($to, $subject, $email_content, $headers)) {
   echo "Message sent successfully!";
 } else {
   http_response_code(500);
-  echo "Failed to send message. Please try again later.";
+  die( 'Message send failed!');
 }
 
