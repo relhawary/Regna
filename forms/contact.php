@@ -43,7 +43,6 @@ if (mail($to, $subject, $email_content, $headers)) {
   http_response_code(200);
   echo "Message sent successfully!";
 } else {
-  http_response_code(500);
-  die( 'Message send failed!');
+  die('Message send failed!');
 }
 
